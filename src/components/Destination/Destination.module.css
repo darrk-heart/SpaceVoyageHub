@@ -22,8 +22,31 @@
 }
 .half {
   display: flex;
-  justify-content: space-between;
   padding: 0 220px;
   margin-top: 5%;
-  align-items: center;
+}
+.halfOne {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #eeeeee;
+}
+.number {
+  margin-right: 20px;
+  color: #666666;
+  font-weight: 600;
+}
+.halfTwo {
+  margin-left: 35%;
+}
+.halfTwo ul {
+  list-style-type: none;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+.halfTwo ul li {
+  padding: 10px 0;
+  margin: 60px 10px 0 10px;
+  border-bottom: 3px solid none;
 }

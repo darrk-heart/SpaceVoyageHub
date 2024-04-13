@@ -4,7 +4,7 @@ import styles from "./Destination.module.css";
 import data from "../../data/data.json";
 
 function Destination({ children }) {
-  const names = data.destinations.map((item) => item.name);
+  const names = data.destinations.map((item) => item.name.toUpperCase());
 
   return (
     <div className={styles.container}>
@@ -14,8 +14,8 @@ function Destination({ children }) {
           {children}
           <div className={styles.half}>
             <div className={styles.halfOne}>
-              <span>01</span>
-              <span>PICK YOUR DESTINATION</span>
+              <span className={styles.number}>01</span>
+              <span className={styles.text}>PICK YOUR DESTINATION</span>
             </div>
             <div className={styles.halfTwo}>
               <ul>
