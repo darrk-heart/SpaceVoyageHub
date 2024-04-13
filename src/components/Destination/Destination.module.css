@@ -1,0 +1,57 @@
+.container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.back {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.heading {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  margin-top: 45px;
+}
+.half {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 220px;
+  margin-top: 15%;
+  align-items: center;
+}
+.halfOne h4 {
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #cccccc;
+}
+.halfOne h1 {
+  font-size: 9rem;
+  margin: 0;
+  color: #dddddd;
+}
+.halfOne p {
+  font-weight: 300;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 2;
+  color: #cccccc;
+}
+.halfTwo {
+  padding: 80px 50px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
