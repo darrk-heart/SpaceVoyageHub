@@ -20,12 +20,12 @@
 .box {
   display: flex;
   width: 65%;
-  background-color: rgba(240, 240, 240, 0.1);
+  background-color: rgba(80, 80, 80, 0.4);
 }
 .box div {
   padding: 30px 0;
   margin-right: 50px;
-  border-bottom: 3px solid rgba(240, 240, 240, 0);
+  border-bottom: 3px solid none;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
 }

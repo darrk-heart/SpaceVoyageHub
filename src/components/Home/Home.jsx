@@ -6,7 +6,9 @@ function Home({ children }) {
   return (
     <div className={styles.container}>
       <img src={bg} alt="background" className={styles.back} />
-      <div className={styles.content}>{children}</div>
+      <div>
+        <div className={styles.heading}>{children}</div>
+      </div>
     </div>
   );
 }
