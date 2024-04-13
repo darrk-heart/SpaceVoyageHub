@@ -2,7 +2,7 @@ import React from "react";
 import { GiCrossMark } from "react-icons/gi";
 import styles from "./Heading.module.css";
 
-function Heading() {
+function Heading({ color }) {
   return (
     <>
       <div className={styles.head}>
@@ -12,7 +12,7 @@ function Heading() {
         <div className={styles.secondHead}>
           <span className={styles.line}></span>
           <div className={styles.box}>
-            <div className={styles.first}>
+            <div className={styles.home} style={{ borderBottom: color }}>
               <span className={styles.number}>00</span>
               <span className={styles.text}>HOME </span>
             </div>
