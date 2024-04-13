@@ -7,12 +7,12 @@ function Heading() {
     <>
       <div className={styles.head}>
         <div className={styles.firstHead}>
-          <GiCrossMark />
+          <GiCrossMark size={35} className={styles.icon} />
         </div>
         <div className={styles.secondHead}>
           <span className={styles.line}></span>
           <div className={styles.box}>
-            <div>
+            <div className={styles.first}>
               <span className={styles.number}>00</span>
               <span className={styles.text}>HOME </span>
             </div>

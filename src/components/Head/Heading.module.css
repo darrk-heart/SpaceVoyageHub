@@ -2,27 +2,41 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 .firstHead {
-  width: 10%;
+  width: 15%;
 }
 .secondHead {
-  width: 90%;
+  width: 85%;
   display: flex;
   align-items: center;
 }
 .line {
-  width: 30%;
+  width: 35%;
   background-color: white;
   height: 1px;
 }
 .box {
   display: flex;
+  width: 65%;
+  background-color: rgba(240, 240, 240, 0.1);
 }
 .box div {
-  padding: 20px 0;
+  padding: 30px 0;
   margin-right: 40px;
 }
 .number {
   margin-right: 10px;
+  font-weight: 700;
+}
+.icon {
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 30%;
+}
+.first {
+  margin-left: 110px;
 }
