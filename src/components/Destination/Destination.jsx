@@ -56,12 +56,24 @@ function Destination({ children }) {
                       .description
                   }
                 </p>
-                <p>
-                  {
-                    data.destinations.find((dest) => dest.name === selectedName)
-                      .travel
-                  }
-                </p>
+                <div className={styles.thirdHalf}>
+                  <div className={styles.halfFive}>
+                    <span>AVG. DISTANCE</span>
+                    <h3>
+                      {data.destinations
+                        .find((dest) => dest.name === selectedName)
+                        .distance.toUpperCase()}
+                    </h3>
+                  </div>
+                  <div className={styles.halfSix}>
+                    <span>EST. TRAVEL TIME</span>
+                    <h3>
+                      {data.destinations
+                        .find((dest) => dest.name === selectedName)
+                        .travel.toUpperCase()}
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           )}
