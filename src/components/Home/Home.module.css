@@ -17,4 +17,5 @@
 .content {
   position: absolute;
   z-index: 15;
+  width: 100%;
 }

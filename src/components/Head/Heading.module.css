@@ -1,0 +1,11 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.secondHead {
+  width: 90%;
+}
+.firstHead {
+  width: 10%;
+}
