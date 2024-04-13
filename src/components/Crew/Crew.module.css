@@ -1,0 +1,29 @@
+.container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.back {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.heading {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  margin-top: 45px;
+}
+.half {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 220px;
+  margin-top: 15%;
+  align-items: center;
+}
