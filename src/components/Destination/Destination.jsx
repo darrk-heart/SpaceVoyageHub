@@ -39,7 +39,7 @@ function Destination({ children }) {
           </div>
           {selectedName && (
             <div className={styles.secondHalf}>
-              <div>
+              <div className={styles.halfThree}>
                 <img
                   alt="symbol"
                   src={
@@ -48,8 +48,8 @@ function Destination({ children }) {
                   }
                 />
               </div>
-              <div>
-                <h2>{selectedName}</h2>
+              <div className={styles.halfFour}>
+                <h1>{selectedName.toUpperCase()}</h1>
                 <p>
                   {
                     data.destinations.find((dest) => dest.name === selectedName)

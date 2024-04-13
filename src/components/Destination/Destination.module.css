@@ -53,4 +53,20 @@
 .secondHalf {
   display: flex;
   padding: 0 220px;
+  justify-content: space-between;
+}
+.halfFour {
+  width: 38%;
+}
+.halfFour p {
+  padding-bottom: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #cccccc;
+  border-bottom: 1px solid #666666;
+}
+.halfFour h1 {
+  margin: 10px 0;
+  font-size: 5rem;
 }
