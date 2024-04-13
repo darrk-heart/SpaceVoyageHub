@@ -14,7 +14,7 @@
   position: absolute;
   z-index: -1;
 }
-.heading {
+.content {
   position: absolute;
   z-index: 15;
   width: 100%;
@@ -49,4 +49,8 @@
   padding: 10px 0;
   margin: 60px 10px 0 10px;
   border-bottom: 3px solid none;
+}
+.secondHalf {
+  display: flex;
+  padding: 0 220px;
 }

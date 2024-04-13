@@ -20,7 +20,7 @@ function Destination({ children }) {
     <div className={styles.container}>
       <img src={bg} alt="background" className={styles.back} />
       <div>
-        <div className={styles.heading}>
+        <div className={styles.content}>
           {children}
           <div className={styles.half}>
             <div className={styles.halfOne}>
@@ -36,9 +36,26 @@ function Destination({ children }) {
                 ))}
               </ul>
             </div>
-            {selectedName && (
+          </div>
+          {selectedName && (
+            <div className={styles.secondHalf}>
+              <div>
+                <img
+                  alt="symbol"
+                  src={
+                    data.destinations.find((dest) => dest.name === selectedName)
+                      .images
+                  }
+                />
+              </div>
               <div>
                 <h2>{selectedName}</h2>
+                <p>
+                  {
+                    data.destinations.find((dest) => dest.name === selectedName)
+                      .description
+                  }
+                </p>
                 <p>
                   {
                     data.destinations.find((dest) => dest.name === selectedName)
@@ -46,8 +63,8 @@ function Destination({ children }) {
                   }
                 </p>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
