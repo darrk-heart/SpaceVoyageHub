@@ -7,10 +7,13 @@ function Crew({ children }) {
     <div className={styles.container}>
       <img src={bg} alt="background" className={styles.back} />
       <div>
-        <div className={styles.heading}>
+        <div className={styles.content}>
           {children}{" "}
           <div className={styles.half}>
-           
+            <div className={styles.halfOne}>
+              <span className={styles.number}>01</span>
+              <span className={styles.text}>PICK YOUR DESTINATION</span>
+            </div>
           </div>
         </div>
       </div>

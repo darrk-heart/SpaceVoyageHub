@@ -14,7 +14,7 @@
   position: absolute;
   z-index: -1;
 }
-.heading {
+.content {
   position: absolute;
   z-index: 15;
   width: 100%;
@@ -24,6 +24,16 @@
   display: flex;
   justify-content: space-between;
   padding: 0 220px;
-  margin-top: 15%;
+  margin-top: 5%;
   align-items: center;
+}
+.halfOne {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #eeeeee;
+}
+.number {
+  margin-right: 20px;
+  color: #666666;
+  font-weight: 600;
 }
