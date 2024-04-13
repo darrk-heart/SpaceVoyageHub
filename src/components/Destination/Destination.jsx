@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bg from "../../assets/destination/destinationbg.jpg";
 import styles from "./Destination.module.css";
 import data from "../../data/data.json";
 
 function Destination({ children }) {
-  const names = data.destinations.map((item) => item.name.toUpperCase());
+  const [selectedName, setSelectedName] = useState(null);
+
+  useEffect(() => {
+    setSelectedName(
+      data.destinations.length > 0 ? data.destinations[0].name : null
+    );
+  }, []);
+
+  const handleNameClick = (name) => {
+    setSelectedName(name);
+  };
 
   return (
     <div className={styles.container}>
@@ -19,11 +29,24 @@ function Destination({ children }) {
             </div>
             <div className={styles.halfTwo}>
               <ul>
-                {names.map((name, index) => (
-                  <li key={index}>{name}</li>
+                {data.destinations.map((item, index) => (
+                  <li key={index} onClick={() => handleNameClick(item.name)}>
+                    {item.name.toUpperCase()}
+                  </li>
                 ))}
               </ul>
             </div>
+            {selectedName && (
+              <div>
+                <h2>{selectedName}</h2>
+                <p>
+                  {
+                    data.destinations.find((dest) => dest.name === selectedName)
+                      .travel
+                  }
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

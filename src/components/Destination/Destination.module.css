@@ -36,14 +36,14 @@
   font-weight: 600;
 }
 .halfTwo {
-  margin-left: 35%;
+  margin-left: 30%;
 }
 .halfTwo ul {
   list-style-type: none;
   display: flex;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
-  color: #cccccc;
+  color: #eeeeee;
 }
 .halfTwo ul li {
   padding: 10px 0;
