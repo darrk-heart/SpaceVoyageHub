@@ -35,3 +35,31 @@
   color: #666666;
   font-weight: 600;
 }
+.halfTwo {
+  display: flex;
+  margin-top: 100px;
+}
+.halfTwo div {
+  width: 50%;
+}
+.imageHalf {
+  margin-left: 70px;
+}
+.textHalf h3 {
+  color: #999999;
+  font-size: 1.5rem;
+  margin: 50px 0 0 0;
+  font-weight: 400;
+}
+.textHalf h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 20px 0 25px 0;
+}
+.textHalf p {
+  width: 80%;
+  color: #cccccc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 2;
+}

@@ -23,18 +23,22 @@ function Crew({ children }) {
             </div>
             {selectedCrew && (
               <div className={styles.halfTwo}>
-                <div>
+                <div className={styles.textHalf}>
                   <h3>
-                    {data.crew.find((dest) => dest.name === selectedCrew).role}
+                    {data.crew
+                      .find((dest) => dest.name === selectedCrew)
+                      .role.toUpperCase()}
                   </h3>
                   <h1>
-                    {data.crew.find((dest) => dest.name === selectedCrew).name}
+                    {data.crew
+                      .find((dest) => dest.name === selectedCrew)
+                      .name.toUpperCase()}
                   </h1>
                   <p>
                     {data.crew.find((dest) => dest.name === selectedCrew).bio}
                   </p>
                 </div>
-                <div>
+                <div className={styles.imageHalf}>
                   <img
                     alt="checking for profile"
                     src={
