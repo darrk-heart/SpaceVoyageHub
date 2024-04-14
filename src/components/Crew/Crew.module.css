@@ -21,8 +21,6 @@
   margin-top: 45px;
 }
 .half {
-  display: flex;
-  justify-content: space-between;
   padding: 0 220px;
   margin-top: 5%;
   align-items: center;

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import bg from "../../assets/crew/crewbg.jpg";
 import styles from "./Crew.module.css";
+import data from "../../data/data.json";
 
 function Crew({ children }) {
+  const [selectedCrew, setSelectedCrew] = useState(null);
+
+  useEffect(() => {
+    setSelectedCrew(data.crew.length > 0 ? data.crew[0].name : null);
+  }, []);
+
   return (
     <div className={styles.container}>
       <img src={bg} alt="background" className={styles.back} />
@@ -11,9 +18,33 @@ function Crew({ children }) {
           {children}{" "}
           <div className={styles.half}>
             <div className={styles.halfOne}>
-              <span className={styles.number}>01</span>
-              <span className={styles.text}>PICK YOUR DESTINATION</span>
+              <span className={styles.number}>02</span>
+              <span className={styles.text}>MEET YOUR CREW</span>
             </div>
+            {selectedCrew && (
+              <div className={styles.halfTwo}>
+                <div>
+                  <h3>
+                    {data.crew.find((dest) => dest.name === selectedCrew).role}
+                  </h3>
+                  <h1>
+                    {data.crew.find((dest) => dest.name === selectedCrew).name}
+                  </h1>
+                  <p>
+                    {data.crew.find((dest) => dest.name === selectedCrew).bio}
+                  </p>
+                </div>
+                <div>
+                  <img
+                    alt="checking for profile"
+                    src={
+                      data.crew.find((dest) => dest.name === selectedCrew)
+                        .images.png
+                    }
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
