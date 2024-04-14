@@ -37,6 +37,12 @@ function Crew({ children }) {
                   <p>
                     {data.crew.find((dest) => dest.name === selectedCrew).bio}
                   </p>
+                  <div className={styles.list}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
                 <div className={styles.imageHalf}>
                   <img

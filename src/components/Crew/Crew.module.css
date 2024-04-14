@@ -63,3 +63,18 @@
   font-size: 0.8rem;
   line-height: 2;
 }
+.list div {
+  width: 15px;
+  background-color: #555555;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.list div:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.list {
+  display: flex;
+  margin-top: 90px;
+}
