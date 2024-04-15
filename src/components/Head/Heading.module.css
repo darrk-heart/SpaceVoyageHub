@@ -45,5 +45,5 @@
 }
 .box div:hover {
   cursor: pointer;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #777777;
 }
