@@ -42,7 +42,6 @@ function Crew({ children }) {
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div></div>
                   </div>
                 </div>
                 <div className={styles.imageHalf}>
