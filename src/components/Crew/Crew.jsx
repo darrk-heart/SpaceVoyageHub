@@ -15,7 +15,7 @@ function Crew({ children }) {
       <img src={bg} alt="background" className={styles.back} />
       <div>
         <div className={styles.content}>
-          {children}{" "}
+          {children}
           <div className={styles.half}>
             <div className={styles.halfOne}>
               <span className={styles.number}>02</span>
