@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import bg from "../../assets/crew/crewbg.jpg";
 import styles from "./Crew.module.css";
-import data from "../../data.json";
+import data from "../../data/data.json";
 
 function Crew({ children }) {
   const [selectedCrew, setSelectedCrew] = useState(null);
@@ -9,7 +9,6 @@ function Crew({ children }) {
   useEffect(() => {
     setSelectedCrew(data.crew.length > 0 ? data.crew[0].name : null);
   }, []);
-
 
   return (
     <div className={styles.container}>
