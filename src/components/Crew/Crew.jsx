@@ -5,13 +5,14 @@ import data from "../../data/data.json";
 
 function Crew({ children }) {
   const [selectedCrew, setSelectedCrew] = useState(null);
-  
+  const [backgroundColor, setBackgroundColor] = useState(null);
 
   useEffect(() => {
     setSelectedCrew(data.crew.length > 0 ? data.crew[0].name : null);
   }, []);
 
   const handleCrewClick = (crew) => {
+    setBackgroundColor(backgroundColor === "white" ? " " : "white");
     setSelectedCrew(crew);
   };
 
@@ -44,15 +45,19 @@ function Crew({ children }) {
                   </p>
                   <div className={styles.list}>
                     <div
+                      style={{ backgroundColor }}
                       onClick={() => handleCrewClick(data.crew[0].name)}
                     ></div>
                     <div
+                      style={{ backgroundColor }}
                       onClick={() => handleCrewClick(data.crew[1].name)}
                     ></div>
                     <div
+                      style={{ backgroundColor }}
                       onClick={() => handleCrewClick(data.crew[2].name)}
                     ></div>
                     <div
+                      style={{ backgroundColor }}
                       onClick={() => handleCrewClick(data.crew[3].name)}
                     ></div>
                   </div>
