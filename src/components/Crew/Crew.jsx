@@ -5,10 +5,15 @@ import data from "../../data/data.json";
 
 function Crew({ children }) {
   const [selectedCrew, setSelectedCrew] = useState(null);
+  
 
   useEffect(() => {
     setSelectedCrew(data.crew.length > 0 ? data.crew[0].name : null);
   }, []);
+
+  const handleCrewClick = (crew) => {
+    setSelectedCrew(crew);
+  };
 
   return (
     <div className={styles.container}>
@@ -38,10 +43,18 @@ function Crew({ children }) {
                     {data.crew.find((dest) => dest.name === selectedCrew).bio}
                   </p>
                   <div className={styles.list}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div
+                      onClick={() => handleCrewClick(data.crew[0].name)}
+                    ></div>
+                    <div
+                      onClick={() => handleCrewClick(data.crew[1].name)}
+                    ></div>
+                    <div
+                      onClick={() => handleCrewClick(data.crew[2].name)}
+                    ></div>
+                    <div
+                      onClick={() => handleCrewClick(data.crew[3].name)}
+                    ></div>
                   </div>
                 </div>
                 <div className={styles.imageHalf}>

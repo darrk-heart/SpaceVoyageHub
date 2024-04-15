@@ -72,7 +72,7 @@
 }
 .list div:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #bbbbbb;
 }
 .list {
   display: flex;
