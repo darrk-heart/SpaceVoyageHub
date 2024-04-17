@@ -7,6 +7,7 @@ function Crew({ children }) {
   const [selectedCrew, setSelectedCrew] = useState(null);
   const [backgroundColor, setBackgroundColor] = useState(null);
 
+  
   useEffect(() => {
     setSelectedCrew(data.crew.length > 0 ? data.crew[0].name : null);
   }, []);
