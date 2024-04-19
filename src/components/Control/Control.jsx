@@ -7,9 +7,9 @@ import Crew from "../Crew/Crew";
 function Control() {
   return (
     <div style={{ padding: "0", margin: "0" }}>
-      <Crew>
-        <Heading colorCrew="3px solid white" />
-      </Crew>
+      <Destination>
+        <Heading colorDestination="3px solid white" />
+      </Destination>
     </div>
   );
 }
