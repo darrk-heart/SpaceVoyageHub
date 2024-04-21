@@ -9,7 +9,7 @@ function Control() {
     <div style={{ padding: "0", margin: "0" }}>
       <Destination>
         <Heading colorDestination="3px solid white" />
-      </Destination1>
+      </Destinations>
     </div>
   );
 }
