@@ -3,6 +3,18 @@ import bg from "../../assets/destination/destinationbg.jpg";
 import styles from "./Destination.module.css";
 import data from "../../data/data.json";
 
+// Import the images
+const images = {
+  "image-moon.png": require("../../assets/destination/image-moon.png"),
+  "image-moon.webp": require("../../assets/destination/image-moon.webp"),
+  "image-mars.png": require("../../assets/destination/image-mars.png"),
+  "image-mars.webp": require("../../assets/destination/image-mars.webp"),
+  "image-europa.png": require("../../assets/destination/image-europa.png"),
+  "image-europa.webp": require("../../assets/destination/image-europa.webp"),
+  "image-titan.png": require("../../assets/destination/image-titan.png"),
+  "image-titan.webp": require("../../assets/destination/image-titan.webp"),
+};
+
 function Destination({ children }) {
   const [selectedName, setSelectedName] = useState(null);
 
@@ -42,10 +54,10 @@ function Destination({ children }) {
               <div className={styles.halfThree}>
                 <img
                   alt="symbol"
-                  src={
+                  src={images[
                     data.destinations.find((dest) => dest.name === selectedName)
-                      .images
-                  }
+                      .images.png
+                  ]}
                 />
               </div>
               <div className={styles.halfFour}>
