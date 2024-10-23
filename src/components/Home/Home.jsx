@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../../assets/home/homebg.jpg";
 import styles from "./Home.module.css";
+import Control from "../Control/Control"
 
 function Home({ children }) {
   return (
