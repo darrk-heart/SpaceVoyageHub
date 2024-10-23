@@ -14,7 +14,7 @@ been facing issues, okay so the problem is i have my images in a directory but i
 
 ## UI
 
-![image](../space-voyage-hub//src/final/Capture.PNG)
+![image](./src/final/Capture.PNG)
 
 ## License
 
